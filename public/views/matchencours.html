@@ -1,0 +1,76 @@
+<!-- public/views/matchencours.html -->
+<div class="jumbotron text-center">
+    <h1>Match contre le FC Sete</h1>
+
+    <p>{{ matchencours }}</p>
+     <div class="col-lg-6">
+              <div class="widget">
+                <div class="widget-title">
+                  <i class="fa fa-tasks"></i> Match contre le FC Sete
+                  <!--<a href="#" class="pull-right">Gérer</a>-->
+                </div>
+                <div class="widget-body medium no-padding">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <tbody>
+                      <table>
+   <tr>
+       <td><ul> 
+			<li><p><a class="btn btn-default"><button ng-click="butpour = butpour + 1" ng-init="butpour=0">But marqué !</button> </a></p></li>  
+			<li><p><a class="btn btn-default"><button ng-click="butcontre = butcontre + 1" ng-init="butcontre=0">But encaissé :(</button> </a></p></li>  
+			<li><p><a class="btn btn-default"><button ng-click="hjnous = hjnous + 1" ng-init="hjnous=0">Hors-Jeu</button></a></p></li> 
+			<li><p><a class="btn btn-default"><button ng-click="hjeux = hjeux + 1" ng-init="hjeux=0">Hors-Jeu</button></a></p></li> 
+		</ul> </td>
+		<td><ul> 
+			<li><p><a class="btn btn-default" href="/match" role="button">Carton jaune </a></p></li> 
+			<li><p><a class="btn btn-default" href="/match" role="button">Carton rouge </a></p></li> 
+		</ul> </td>
+   </tr>
+  
+                       <!-- <tr><td>FC Sete</td><td></td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr                      </tbody> -->
+                    </table>
+                    
+                  </div>
+                </div>
+              </div>
+</div>
+<div class="col-lg-6">
+              <div class="widget">
+                <div class="widget-title">
+                  <i class="fa fa-tasks"></i> Stats rapides du match
+                  <!--<a href="#" class="pull-right">Gérer</a>-->
+                </div>
+                <div class="widget-body medium no-padding">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <tbody>
+                      <table>
+   <tr>
+   
+       <td><ul> 
+			<li><p></p></li>
+			 <li><p>Buts:</p></li> 
+             <li><p>Hors-jeux:</p></li>
+		</ul> </td>
+		<td><ul> 
+			<li><p>Nous</p></li>
+			 <li><p>{{butpour}}</p></li>
+             <li><p>{{hjnous}}</p></li>
+		</ul> </td>
+		<td><ul> 
+			<li><p>Eux</p></li>
+			 <li><p>{{butcontre}}</p></li>
+             <li><p>{{hjeux}}</p></li>
+		</ul> </td>
+		
+   </tr>
+  
+                       <!-- <tr><td>FC Sete</td><td></td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr                      </tbody> -->
+                    </table>
+                    
+                  </div>
+                </div>
+              </div>
+</div>
+</div>
+

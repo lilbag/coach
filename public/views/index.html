@@ -1,0 +1,55 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Coach Maker</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/MatchCtrl.js"></script>
+    <script src="js/controllers/EntrainementCtrl.js"></script>
+    <script src="js/services/EntrainementService.js"></script>
+    <script src="js/controllers/EquipeCtrl.js"></script>
+    <script src="js/appRoutes.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="sampleApp" ng-controller="EntrainementController" class="style body">
+<div class="container">
+    <!-- HEADER -->
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Coach Maker</a>
+        </div>
+
+        <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
+        <ul class="nav navbar-nav">
+            <li><a href="/entrainement">Entrainement</a></li>
+            <li><a href="/match">Matchs</a></li>
+            <li><a href="/equipe">Equipes</a></li>
+        </ul>
+        <div class="style right">
+            <form name="newFeed">
+                    <li class="style text-blanc"> Identifiant : . . .  <input size="12" name="id" ng-model="newFeed.url" type="text" required>
+                    </li>
+                    <li class="style text-blanc"> Mot de passe : <input size="12" name="mdp" ng-model="newFeed.url" type="password" required></li>
+            </form>
+        </div>
+        <div class="style right"></div>
+    </nav>
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+
+</div>
+</body>
+</html>

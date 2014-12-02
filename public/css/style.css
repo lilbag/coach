@@ -1,0 +1,52 @@
+.row {
+margin-right: -10%;
+margin-left: 05%;
+}
+.row-img{
+    margin-top: 05%;
+}
+.body{
+    background-image:url(/images/fond.jpg);
+    background-size:cover;
+    background-position: 50%;
+    background-attachment:fixed;
+}
+.text-blanc{
+    color:#9d9d9d;
+}
+.right{
+    margin-left:75%;
+    color:black;
+    display:block;
+}
+.col-voir-left{
+        position:relative;
+	min-height:1px;
+	padding-right:15px;
+	padding-left:15px;
+        background-color:#222;
+        width:33.33333333%;
+        float:left;
+        display:inline-block;
+}
+.col-voir-rigth{
+        position:relative;
+	min-height:1px;
+	padding-right:15px;
+	padding-left:15px;
+        background-color:#222;
+        width:33.33333333%;
+        float:right;
+        display:inline-block;
+}
+
+.voir{
+    float:right;
+    display:inline-block;
+}
+.ng-hide {
+  display:none;
+}
+.widget{
+    background-color:#222;
+}
